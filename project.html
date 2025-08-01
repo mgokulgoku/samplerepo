@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Card Info</title>
+    <style>
+        body {
+            background-color: rgb(215, 244, 255);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+        }
+
+        #container {
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn {
+            border: none;
+            padding: 10px;
+            background-color: tomato;
+            border-radius: 10px;
+            font-size: large;
+        }
+
+        #container .userCard {
+            background-color: white;
+            width: 300px;
+            height: 200px;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .userCard img {
+            border-radius: 50%;
+            margin: 0;
+        }
+
+        .userCard p {
+            color: gray;
+            margin: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1>User Info Card Generator</h1>
+        <button id="btn" class="btn">Generate User</button>
+        <div id="CardContent"></div>
+    </div>
+
+    <script>
+        const btn = document.getElementById('btn')
+        const CardContent = document.getElementById('CardContent')
+
+        const generateCard = () => {
+
+            const userDetails = [{ name: 'Gokul', email: 'gokul@example.com', city: 'karaikudi', photo: 'https://i.pravatar.cc/80?img=1' },
+            { name: 'Steve', email: 'steve@example.com', city: 'karaikudi', photo: 'https://i.pravatar.cc/80?img=2' },
+            { name: 'Elon', email: 'elon@example.com', city: 'karaikudi', photo: 'https://i.pravatar.cc/80?img=3' }];
+
+            const randNum = userDetails[Math.floor(Math.random() * userDetails.length)];
+            CardContent.innerHTML = `<div class="userCard">
+                                             <img src= ${randNum.photo}></img>
+                                             <h3>${randNum.name}</h3>
+                                             <p>${randNum.email}</p>
+                                             <p>${randNum.city}</p>
+                                             </div>`;
+        }
+
+        btn.addEventListener('click', generateCard)   
+    </script>
+</body>
+
+</html>
+</body>
+
+</html>
