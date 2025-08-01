@@ -1,5 +1,3 @@
-hi iam Gokul
-hello world
 
 const btn = document.getElementById('btn')
         const CardContent = document.getElementById('CardContent')
