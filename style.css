@@ -34,5 +34,23 @@ body {
             border-radius: 10px;
         }
 
+.btn {
+            border: none;
+            padding: 10px;
+            background-color: tomato;
+            border-radius: 10px;
+            font-size: large;
+        }
+
+        #container .userCard {
+            background-color: white;
+            width: 300px;
+            height: 200px;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
         
+
 
