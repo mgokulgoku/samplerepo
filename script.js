@@ -15,4 +15,4 @@ const btn = document.getElementById('btn')
                                              <p>${randNum.city}</p>
                                              </div>`;
         }
- btn.addEventListener('click', generateCard)   
+
