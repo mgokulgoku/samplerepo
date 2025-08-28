@@ -28,4 +28,4 @@ const btn = document.getElementById('btn')
         btn.addEventListener('click', generateCard)   
         }
 
-       btn.addEventListener('click', generateCard)   
+        
