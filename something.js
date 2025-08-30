@@ -25,7 +25,7 @@ const btn = document.getElementById('btn')
                                              </div>`;
         }
 
-         btn.addEventListener('click', generateCard)  
+       
         }
 
         
